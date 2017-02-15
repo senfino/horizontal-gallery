@@ -1,0 +1,27 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "javascript-libs": "^1.0.0",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valueblended/horizontal-gallery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valueblended/horizontal-gallery/issues"
+  },
+  "homepage": "https://github.com/valueblended/horizontal-gallery#readme"
+}

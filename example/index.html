@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Horizontal Gallery Example</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+
+		.horizontal-scroll{
+			position: relative;
+			background: cyan;
+		}
+
+		.horizontal-scroll .horizontal-scroll-arrow{
+			position: absolute;
+			border: none;
+			background: grey;
+			width: 50px;
+			height: 50px;
+			top: 50%;
+			transform: translateY(-50%);
+			visibility: hidden;
+			opacity: 0;
+			transition: opacity 200ms, visibility 200ms;
+		}
+
+		.horizontal-scroll .horizontal-scroll-arrow.horizontal-scroll-arrow-left{
+			left: 0;
+		}
+
+		.horizontal-scroll .horizontal-scroll-arrow.horizontal-scroll-arrow-right{
+			right: 0;
+		}
+
+		.horizontal-scroll .horizontal-scroll-arrow.horizontal-scroll-arrow-visible{
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.horizontal-scroll .horizontal-scroll-list{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			white-space: nowrap;
+			overflow: auto;
+			padding: 0 20px;
+		}
+
+		.horizontal-scroll .horizontal-scroll-list li{
+			display: inline-block;
+		}
+
+		.horizontal-scroll .horizontal-scroll-list li+li{
+			margin-left: 10px;
+		}
+
+		.example-list-element{
+			width: 100px;
+			height: 100px;
+			background: red;
+			border-radius: 10px;
+			border: 1px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>Usage example</h1>
+
+
+
+
+	<div class="horizontal-scroll" id="horizontal-scroll">
+		<button type="button" class="horizontal-scroll-arrow horizontal-scroll-arrow-left"><</button>
+		<button type="button" class="horizontal-scroll-arrow horizontal-scroll-arrow-right">></button>
+		<ul class="horizontal-scroll-list">
+			<li><div class="example-list-element">element #1</div></li><!-- 
+	 --><li><div class="example-list-element">element #2</div></li><!-- 
+	 --><li><div class="example-list-element">element #3</div></li><!-- 
+	 --><li><div class="example-list-element">element #4</div></li><!-- 
+	 --><li><div class="example-list-element">element #5</div></li><!-- 
+	 --><li><div class="example-list-element">element #6</div></li><!-- 
+	 --><li><div class="example-list-element">element #7</div></li><!-- 
+	 --><li><div class="example-list-element">element #8</div></li><!-- 
+	 --><li><div class="example-list-element">element #9</div></li><!-- 
+	 --><li><div class="example-list-element">element #10</div></li><!-- 
+	 --><li><div class="example-list-element">element #11</div></li><!-- 
+	 --><li><div class="example-list-element">element #12</div></li><!-- 
+	 --><li><div class="example-list-element">element #13</div></li><!-- 
+	 --><li><div class="example-list-element">element #14</div></li><!-- 
+	 --><li><div class="example-list-element">element #15</div></li>
+		</ul>
+	</div>
+
+
+
+
+	<script src="/node_modules/jquery/dist/jquery.js"></script>
+	<script src="/node_modules/javascript-libs/build/tn-javascript-extensions.js"></script>
+	<script type="text/javascript" src="../main.js"></script>
+	<script type="text/javascript">
+		var horizontalListInstance = new com.valueblended.HorizontalGallery({
+			element: document.getElementById('horizontal-scroll')
+		});
+
+		console.log('custom example code ran');
+
+		console.log(horizontalListInstance);
+	</script>
+</body>
+</html>
