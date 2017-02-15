@@ -1,6 +1,6 @@
 {
-  "name": "html",
-  "version": "1.0.0",
+  "name": "horizontal-gallery",
+  "version": "0.1.0",
   "description": "",
   "main": "main.js",
   "directories": {
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/valueblended/horizontal-gallery.git"
   },
-  "author": "",
+  "author": "Value Blended",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/valueblended/horizontal-gallery/issues"
